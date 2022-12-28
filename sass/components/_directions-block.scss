@@ -1,0 +1,42 @@
+.directions-block {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  display: block;
+}
+
+.directions-list {
+  gap: 30px;
+  display: flex;
+  list-style-type: none;
+
+  &__icon {
+    padding: 25px 102px 25px 102px;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+
+  &__header {
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--best-color3);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--best-color4);
+    width: 270px;
+  }
+}

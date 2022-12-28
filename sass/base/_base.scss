@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--best-color8);
+    font-family: "Roboto", sans-serif;
+    color: var(--best-color3);
+    text-decoration: none;
+}
+
+.border {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ececec;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
