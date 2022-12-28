@@ -23,43 +23,48 @@
 
 <header class="border">
 
-<div class="navigation container">
-    <nav class="navigation-menu">
-        <a class="logo" href="./index.html">Web
-            <span class="logo__white">Studio</span>
-        </a>
-        <ul class="top-nav">
-            <li class="top-nav__item"><a class="top-nav__text " href="./index.html">Студія</a></li>
-            <li class="top-nav__item"><a class="top-nav__text current" href="./portfolio.html">Портфоліо</a></li>
-            <li class="top-nav__item"><a class="top-nav__text " href="#">Контакти</a></li>
-        </ul>
+    <div class="navigation container">
+        <nav class="navigation-menu">
+            <a class="logo" href="./index.html">Web
+                <span class="logo__white">Studio</span>
+            </a>
+            <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-label="mobile-menu">
+                <svg width="24px" height="16px">
+                    <use class="mobile-menu__icon-menu" a href="./img/symbol-features.svg#mobile-batton"></use>
+                </svg>
+            </button>
+            <ul class="top-nav">
+                <li class="top-nav__item"><a class="top-nav__text " href="./index.html">Студія</a></li>
+                <li class="top-nav__item"><a class="top-nav__text current" href="./portfolio.html">Портфоліо</a></li>
+                <li class="top-nav__item"><a class="top-nav__text " href="#">Контакти</a></li>
+            </ul>
 
-        <ul class="top-contacts">
+            <ul class="top-contacts">
 
-            <li class="top-contacts__item">
+                <li class="top-contacts__item">
 
-                <a class="top-contacts__text " href="mailto:info@devstudio.com">
-                    <svg class="top-contacts__icon" Width="16" Height="12">
-                        <use href="./img/symbol-defs.svg#icon-mail"></use>
-                    </svg>
+                    <a class="top-contacts__text " href="mailto:info@devstudio.com">
+                        <svg class="top-contacts__icon" Width="16" Height="12">
+                            <use href="./img/symbol-defs.svg#icon-mail"></use>
+                        </svg>
 
-                    info@devstudio.com
-                </a>
-            </li>
+                        info@devstudio.com
+                    </a>
+                </li>
 
-            <li class="top-contacts__item">
+                <li class="top-contacts__item">
 
-                <a class="top-contacts__text " href="tel:+380961111111">
-                    <svg class=" top-contacts__icon " Width="10" Height="16">
-                        <use href="./img/symbol-defs.svg#icon-tel"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
+                    <a class="top-contacts__text " href="tel:+380961111111">
+                        <svg class=" top-contacts__icon " Width="10" Height="16">
+                            <use href="./img/symbol-defs.svg#icon-tel"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
 
-    </nav>
-</div>
+        </nav>
+    </div>
 
 </header>
 
@@ -83,8 +88,20 @@
                 <li class="portfolio-list__item">
                     <a class="portfolio-list__link" href="#" target="_blank">
                         <div class="portfolio-list__wrapper">
-                            <img class="portfolio-list__img" src="./img/texnocryk.jpg" alt="технокряк" width="370" height="294">
-                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+
+
+
+
+                            <img src=" ./img/texnocryk.jpg" alt="технокряк"
+                                srcset="./img/portfolio/img1-450@1x.jpg 450w, 
+                                                         ./img/portfolio/img1-370@1x.jpg 370w,  ./img/portfolio/img1-354@1x.jpg 354w"
+                                sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw">
+
+
+
+
+                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним
+                                рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -101,8 +118,12 @@
                 <li class="portfolio-list__item">
                     <a class="portfolio-list__link" href="#" target="_blank">
                         <div class="portfolio-list__wrapper">
-                            <img class="portfolio-list__img" src="./img/basketball.jpg" alt="баскетбол" width="370" height="294">
-                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                            <img src=" ./img/texnocryk.jpg" alt="технокряк"
+                                srcset="./img/portfolio/img2-450@1x.jpg 450w, 
+                                            ./img/portfolio/img2-370@1x.jpg 370w,  ./img/portfolio/img2-354@1x.jpg 354w"
+                                sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw">
+                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним
+                                рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -117,8 +138,11 @@
                 <li class="portfolio-list__item">
                     <a class="portfolio-list__link" href="#" target="_blank">
                         <div class="portfolio-list__wrapper">
-                            <img class="portfolio-list__img" src="./img/seafood.jpg" alt="морськаеда" width="370" height="294">
-                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                            <img src=" ./img/texnocryk.jpg" alt="технокряк" srcset="./img/portfolio/img3-450@1x.jpg 450w, 
+                                  ./img/portfolio/img3-370@1x.jpg 370w,  ./img/portfolio/img3-354@1x.jpg 354w"
+                                sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw">
+                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним
+                                рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -133,8 +157,11 @@
                 <li class="portfolio-list__item">
                     <a class="portfolio-list__link" href="#" target="_blank">
                         <div class="portfolio-list__wrapper">
-                            <img class="portfolio-list__img" src="./img/headphones.jpg" alt="навушники" width="370" height="294">
-                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                            <img src=" ./img/texnocryk.jpg" alt="технокряк" srcset="./img/portfolio/img4-450@1x.jpg 450w, 
+                                ./img/portfolio/img4-370@1x.jpg 370w,  ./img/portfolio/img4-354@1x.jpg 354w"
+                                sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw">
+                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним
+                                рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -148,8 +175,12 @@
                 <li class="portfolio-list__item">
                     <a class="portfolio-list__link" href="#" target="_blank">
                         <div class="portfolio-list__wrapper">
-                            <img class="portfolio-list__img" src="./img/boxes.jpg" alt="коробки" width="370" height="294">
-                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                            <img src=" ./img/texnocryk.jpg" alt="технокряк"
+                                srcset="./img/portfolio/img5-450@1x.jpg 450w, 
+                                                            ./img/portfolio/img5-370@1x.jpg 370w,  ./img/portfolio/img5-354@1x.jpg 354w"
+                                sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw">
+                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним
+                                рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -163,8 +194,12 @@
                 <li class="portfolio-list__item">
                     <a class="portfolio-list__link" href="#" target="_blank">
                         <div class="portfolio-list__wrapper">
-                            <img class="portfolio-list__img" src="./img/imac.jpg" alt="аймак" width="370" height="294">
-                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                            <img src=" ./img/texnocryk.jpg" alt="технокряк"
+                                srcset="./img/portfolio/img6-450@1x.jpg 450w, 
+                                                            ./img/portfolio/img6-370@1x.jpg 370w,  ./img/portfolio/img6-354@1x.jpg 354w"
+                                sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw">
+                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним
+                                рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -178,8 +213,12 @@
                 <li class="portfolio-list__item">
                     <a class="portfolio-list__link" href="#" target="_blank">
                         <div class="portfolio-list__wrapper">
-                            <img class="portfolio-list__img" src="./img/book.jpg" alt="книга" width="370" height="294">
-                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                            <img src=" ./img/texnocryk.jpg" alt="технокряк"
+                                srcset="./img/portfolio/img7-450@1x.jpg 450w, 
+                                                            ./img/portfolio/img7-370@1x.jpg 370w,  ./img/portfolio/img7-354@1x.jpg 354w"
+                                sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw">
+                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним
+                                рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -193,8 +232,12 @@
                 <li class="portfolio-list__item">
                     <a class="portfolio-list__link" href="#" target="_blank">
                         <div class="portfolio-list__wrapper">
-                            <img class="portfolio-list__img" src="./img/lab.jpg" alt="лаб" width="370" height="294">
-                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                            <img src=" ./img/texnocryk.jpg" alt="технокряк"
+                                srcset="./img/portfolio/img8-450@1x.jpg 450w, 
+                                                            ./img/portfolio/img8-370@1x.jpg 370w,  ./img/portfolio/img8-354@1x.jpg 354w"
+                                sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw">
+                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним
+                                рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -208,8 +251,12 @@
                 <li class="portfolio-list__item">
                     <a class="portfolio-list__link" href="#" target="_blank">
                         <div class="portfolio-list__wrapper">
-                            <img class="portfolio-list__img" src="./img/notebook.jpg" alt="ноутбук" width="370" height="294">
-                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                            <img src=" ./img/texnocryk.jpg" alt="технокряк"
+                                srcset="./img/portfolio/img9-450@1x.jpg 450w, 
+                                                            ./img/portfolio/img9-370@1x.jpg 370w,  ./img/portfolio/img9-354@1x.jpg 354w"
+                                sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw">
+                            <p class="portfolio-list__description"> Ресурс пропонує комплексні пропозиції з різним
+                                рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -252,7 +299,7 @@
                 </ul>
             </div>
 
-            <!--footer social-->
+
 
             <div class="conect-all">
                 <p>приєднуйтесь</p>
@@ -310,6 +357,61 @@
         </div>
 
 </footer>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+        <svg class="modal-icon__close" href="#" width="18" height="18">
+            <use href="./img/symbol-features.svg#icon-close"></use>
+        </svg>
+    </button>
+
+    <ul class="mobile-menu">
+        <li><a href="./index.html" class="link">Студія</a></li>
+        <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li><a href="#" class="link">Контакти</a></li>
+    </ul>
+
+    <ul class="mobile-top-contacts">
+        <li class="mobile-top-contacts__item">
+            <a class="mobile-top-contacts__text-tel" href="tel:+380961111111">
+                <svg class="mobile-top-contacts__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+        </li>
+
+        <li class="mobile-top-contacts__item">
+            <a class="mobile-top-contacts__text-email" href="mailto:info@devstudio.com">
+                <svg class="mobile-top-contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope">
+
+                    </use>
+                </svg>info@devstudio.com</a>
+        </li>
+    </ul>
+
+    <ul class="social-top">
+        <li class="social-top__item">
+            <a href="" class="social-top__text">Instagram</a>
+        </li>
+        <li class="social-top__item">
+            <a href="" class="social-top__text">Twitter</a>
+        </li>
+        <li class="social-top__item">
+            <a href="" class="social-top__text">Facebook</a>
+        </li>
+        <li class="social-top__item">
+            <a href="" class="social-top__text">LinkedIn</a>
+        </li>
+    </ul>
+</div>
+<script src="./js/modal.js"></script>
+
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="./js/mobile-menu.js"></script>
 
 </body>
 

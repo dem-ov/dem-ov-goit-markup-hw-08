@@ -1,7 +1,10 @@
 .directions-block {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  // padding-bottom: 94px;
+  // padding-top: 94px;
   display: block;
+
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .directions-list {
@@ -9,12 +12,46 @@
   display: flex;
   list-style-type: none;
 
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+
   &__icon {
     padding: 25px 102px 25px 102px;
     width: 270px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 120px;
+      padding: 25px 192px 25px 192px;
+
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 120px;
+        padding: 25px 144px 25px 144px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 120px;
+        padding: 25px 101px 25px 101px;
+      }
+    }
   }
 
   &__header {
@@ -28,6 +65,22 @@
     color: var(--best-color3);
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-align: left;
+      color: var(--best-color3);
+      text-transform: uppercase;
+    }
   }
 
   &__text {
@@ -38,5 +91,17 @@
     text-align: left;
     color: var(--best-color4);
     width: 270px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }

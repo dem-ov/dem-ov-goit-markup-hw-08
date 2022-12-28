@@ -1,53 +1,276 @@
-    Создай репозиторий goit-markup-hw-01.
-    Выполни HTML-разметку макета страницы домашнего задания #1, без CSS оформления.
-    Настрой GitHub Pages и добавь ссылку на живую страницу в шапку GitHub-репозитория.
+.footer-menu {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--best-color6);
+  margin: 0 auto;
+}
 
-Критерии приёма работы наставником
-Проект
+.footer-adr {
+  @media screen and (min-width: 768px) {
+    justify-content: space-around;
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-«A1» Главный HTML-файл называется index.html.
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 
-«A2» В корне проекта есть папка images с изображениями.
+.contact-list {
+  list-style-type: none;
+  font-style: normal;
+  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
 
-«A3» В названиях файлов нет заглавных букв, пробелов и транслита, только буквы и слова английского языка.
+  &__adr {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--best-color8);
+  }
 
-«A4» Исходный код отформатирован при помощи Prettier.
+  &__mail {
+    text-decoration: none;
+    height: 21px;
+    width: 231px;
+    left: 215px;
+    top: 2235px;
+    border-radius: nullpx;
+    color: var(--best-color9);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
 
-«A5» Все изображения и текстовый контент взяты из макета.
+  &__tel {
+    text-decoration: none;
+    height: 21px;
+    width: 231px;
+    left: 215px;
+    top: 2235px;
+    border-radius: nullpx;
+    color: var(--best-color9);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-around;
+    align-items: baseline;
+    display: flex;
+  }
+}
 
-«A6» Все растровые изображения оптимизированы используя squoosh.
+.conect-all {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  // margin-right: 93px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
 
-«A7» Код написан следуя руководству.
-Разметка
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    // margin-right: 93px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
 
-«B1» Разметка страницы Студия набрана в файле index.html.
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+}
 
-«B2» Выполнена HTML-разметка всех элементов макета.
+.connect-list {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
 
-«B3» Теги использованы согласно их семантического смысла.
+.adr-items {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
 
-«B4» HTML проходит проверку валидатором без ошибок.
+.mailing-list {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-«B5» В разметке есть теги для выделения основной структуры страницы: <header>, <main> и <footer>.
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    flex-direction: column;
+  }
 
-«B6» Логотип в хедере и футере - это ссылка с текстом, не изображение.
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
 
-«B7» Тег <nav> использован единожды на странице - в хедере.
+  &__email {
+    margin-top: 20px;
+    display: flex;
 
-«B8» Контакты в хедере (почта и телефон) находятся вне тега <nav>.
+    flex-direction: column;
+    gap: 20px;
 
-«B9» Тег <h1> использован один раз на странице.
+    @media screen and (min-width: 768px) {
+      align-items: center;
+      align-content: normal
+    }
+  }
+}
 
-«B10» Элемент с текстом "Заказать услугу" - это кнопка с type="button".
+.connect-list__link {
+  fill: white;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  padding: 12;
+  display: flex;
+  padding: 12px;
+  margin: 0px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-«B11» Заголовки секций размечены тегом <h2>.
+  &:hover {
+    background-color: #2196f3;
+  }
 
-«B12» У тегов <img> указаны атрибуты размеров, как минимум width.
+  &:focus {
+    background-color: #2196f3;
+  }
+}
 
-«B13» У тегов <img> есть атрибут alt, который заполнен кратким описанием о том, что изображено на картинке.
+.contacts :not(:last-child) {
+  margin-bottom: 9px;
+}
+.form-batton {
+  width: 200px;
+  height: 50px;
+  left: 1213px;
+  top: 2794px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  fill: var(--best-color2);
+  gap: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
 
-«B14» Изображения экспортированы из макета в формате jpg.
+  &:focus {
+    border-radius: 4px;
+    background-color: #188ce8;
+  }
 
-«B15» Группы однотипных элементов собраны в списки <ul>.
+  &:hover {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 
-«B16» Тег <address> использован только в футере.
+  &:active {
+    background-color: #188ce8;
+  }
+}
+.input {
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2784px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0 16px;
+  cursor: pointer;
+
+  &:focus {
+    border: var(--best-color1) 1px solid;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover {
+    border: var(--best-color1) 1px solid;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

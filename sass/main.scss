@@ -1,19 +1,16 @@
-@import 'base/base';
+@import "base/base";
+@import "components/container";
 @import "components/logo";
 @import "components/page-header";
 @import "utils/variables";
 @import "components/top-contacts";
 @import "components/hero-section";
-@import 'components/hero-section__batton';
-@import 'components/_directions-block';
-@import 'components/what-doing';
-@import 'components/team';
-@import 'components/Regular-customers';
-@import 'components/footer';
-@import 'components/modal-window';
-@import 'components/portfolio';
-// @import 'components
-// @import 'components
-
-
-
+@import "components/hero-section__batton";
+@import "components/_directions-block";
+@import "components/what-doing";
+@import "components/team";
+@import "components/regular-customers";
+@import "components/footer";
+@import "components/modal-window";
+@import "components/portfolio";
+@import "components/mobile-menu";

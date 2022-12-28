@@ -9,9 +9,27 @@
   display: flex;
   list-style-type: none;
   margin-bottom: 50px;
+  @media screen and(min-width: 480px) {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 15px;
+  }
+  @media screen and(min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and(min-width: 1200px) {
+  }
 
   & &__item + &__item {
     margin-left: 8px;
+
+    @media screen and(min-width: 480px) {
+      margin-left: 0px;
+    }
   }
 }
 .project-nav__button {
@@ -72,6 +90,19 @@
 
   &__item {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and(min-width: 480px) {
+      width: 450px;
+      height: 404px;
+    }
+
+    @media screen and(min-width: 768px) {
+      width: 354px;
+      height: 440px;
+    }
+    @media screen and(min-width: 1200px) {
+      width: 370px;
+      height: 440px;
+    }
   }
 
   &__link {
